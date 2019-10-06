@@ -1,0 +1,16 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/* Fonts for h1 tags */
+h1{
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.buttons{
+    background:white;
+}
