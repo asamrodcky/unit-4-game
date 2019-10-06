@@ -4,6 +4,18 @@
 
 body{
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background: #80DED9;
+    font-size: 18px;
+}
+
+.container{
+    text-align:center;
+}
+
+.header{
+    background:black;
+    color:white;
+    margin-bottom: 20px;
 }
 
 /* Fonts for h1 tags */
@@ -11,6 +23,21 @@ h1{
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
+.main{
+    background:white;
+    margin-bottom:20px;
+}
+
 .buttons{
     background:white;
+    margin-bottom: 20px;
+}
+
+.data{
+    background:white;
+    margin-bottom: 20px;
+}
+
+#signature{
+    text-align:right;
 }
