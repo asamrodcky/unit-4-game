@@ -21,6 +21,26 @@ function reset(){
     $("#goalValue").text(goal)
 }
 
+function check(){
+    if (score < goal){
+        console.log("try again")
+    }
+
+    else if (score === goal){
+        alert("YOU WON!");
+        win++;
+        $("#winLoss").text(win+ "-"+ lose);
+        reset();
+    }
+
+    else if (score > goal){
+        alert("You lose :/");
+        lose++;
+        $("#winLoss").text(win+ "-" +lose);
+        reset();
+    }
+}
+
 //Checks
 console.log(crystal1);
 console.log(crystal2);
@@ -30,42 +50,32 @@ console.log("goal: "+ goal);
 
 $("#goalValue").text(goal)
 
-if(score < goal){
 $('body').on('click','#crystal1',function(){
     score += crystal1
     $("#scoreValue").text(score)
     console.log("score: " + score)
+    check();
 })
 
 $('body').on('click','#crystal2',function(){
     score += crystal2
     $("#scoreValue").text(score)
     console.log("score: " + score)
+    check();
 })
 
 $('body').on('click','#crystal3',function(){
     score += crystal3
     $("#scoreValue").text(score)
     console.log("score: " + score)
+    check();
 })
 
 $('body').on('click','#crystal4',function(){
     score += crystal4
     $("#scoreValue").text(score)
     console.log("score: " + score)
+    check();
 })
-}
-else if (score === goal){
-    win++;
-    $("#winLoss").text(win+lose);
-    alert("YOU WON!");
-    reset();
-}
-else if (score > goal){
-    alert("You lose :/");
-    lose++;
-    $("#winLoss").text(win+lose);
-    reset();
-}
 
 })
